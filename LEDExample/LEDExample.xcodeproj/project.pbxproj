@@ -13,6 +13,7 @@
 		36369FC3299456D2002811B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36369FC1299456D2002811B2 /* Main.storyboard */; };
 		36369FC5299456D4002811B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36369FC4299456D4002811B2 /* Assets.xcassets */; };
 		36369FC8299456D4002811B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36369FC6299456D4002811B2 /* LaunchScreen.storyboard */; };
+		366231DA299724F5001E06F2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366231D9299724F5001E06F2 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		36369FC4299456D4002811B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36369FC7299456D4002811B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36369FC9299456D4002811B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366231D9299724F5001E06F2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				36369FBB299456D2002811B2 /* AppDelegate.swift */,
 				36369FBD299456D2002811B2 /* SceneDelegate.swift */,
 				36369FBF299456D2002811B2 /* ViewController.swift */,
+				366231D9299724F5001E06F2 /* SettingViewController.swift */,
 				36369FC1299456D2002811B2 /* Main.storyboard */,
 				36369FC4299456D4002811B2 /* Assets.xcassets */,
 				36369FC6299456D4002811B2 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				36369FC0299456D2002811B2 /* ViewController.swift in Sources */,
 				36369FBC299456D2002811B2 /* AppDelegate.swift in Sources */,
 				36369FBE299456D2002811B2 /* SceneDelegate.swift in Sources */,
+				366231DA299724F5001E06F2 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LEDExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,6 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LEDExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
