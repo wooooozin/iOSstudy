@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ixP-V5-dbg" customClass="StarCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StarCell" id="ixP-V5-dbg" customClass="StarCell">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zR7-L1-LJV">
@@ -195,7 +195,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cek-O4-Tcz" customClass="DairyCell" customModule="DiaryDemo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DairyCell" id="Cek-O4-Tcz" customClass="DairyCell" customModule="DiaryDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FeV-Ev-NfU">
@@ -226,6 +226,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="180" height="200"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="BZQ-Yk-HDG" id="bd5-b6-Ben"/>
+                                            <outlet property="titleLabel" destination="NtK-hd-8fx" id="PzC-y7-YxR"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -322,8 +326,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="일기작성" id="L6y-DF-2zc">
-                        <barButtonItem key="rightBarButtonItem" title="등록" id="V3v-Qz-Sy5"/>
+                        <barButtonItem key="rightBarButtonItem" title="등록" id="V3v-Qz-Sy5">
+                            <connections>
+                                <action selector="tapConfirmButton:" destination="NAn-HU-SGV" id="Sy5-FI-ToU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confirmButton" destination="V3v-Qz-Sy5" id="hIR-yL-B9G"/>
+                        <outlet property="contentTextView" destination="Ji4-iB-BtB" id="zTo-hJ-6kz"/>
+                        <outlet property="dateTextField" destination="z1j-hc-1H8" id="G1c-4A-28b"/>
+                        <outlet property="titleTextField" destination="YiK-DE-55l" id="pWz-Nx-cvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDF-C6-oIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,4 +9,7 @@ import UIKit
 
 class DairyCell: UICollectionViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
 }
