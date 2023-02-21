@@ -20,12 +20,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         configureCollectionView()
         loadDiaryList()
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(editDiaryNotification),
+            name: NSNotification.Name("editDiary"),
+            object: nil
+        )
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let writeVC = segue.destination as? WriteViewController {
             writeVC.delegate = self
         }
+    }
+    
+    @objc func editDiaryNotification(_ noti: Notification) {
+        guard let diary = noti.object as? Diary else { return }
+        guard let row = noti.userInfo?["indexPath.row"] as? Int else { return }
+        self.diaryList[row] = diary
+        self.diaryList = self.diaryList.sorted(by: {
+            $0.date.compare($1.date) == .orderedDescending
+        })
+        self.collectionView.reloadData()
     }
     
     private func saveDiaryList() {
@@ -71,16 +87,6 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: WriteViewDelegate {
-    func didSelectRegister(diary: Diary) {
-        self.diaryList.append(diary)
-        self.diaryList = self.diaryList.sorted(by: {
-            $0.date.compare($1.date) == .orderedDescending
-        })
-        self.collectionView.reloadData()
-    }
-}
-
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.diaryList.count
@@ -93,12 +99,39 @@ extension ViewController: UICollectionViewDataSource {
         cell.dateLabel.text = self.dateToString(date: diary.date)
         return cell
     }
-    
-    
+
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (UIScreen.main.bounds.width / 2) - 20, height: 200)
+    }
+}
+
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+        let diary = self.diaryList[indexPath.row]
+        vc.diary = diary
+        vc.indexPath = indexPath
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension ViewController: WriteViewDelegate {
+    func didSelectRegister(diary: Diary) {
+        self.diaryList.append(diary)
+        self.diaryList = self.diaryList.sorted(by: {
+            $0.date.compare($1.date) == .orderedDescending
+        })
+        self.collectionView.reloadData()
+    }
+}
+
+extension ViewController: DetailViewDelegate {
+    func didSelectDelete(indexPath: IndexPath) {
+        self.diaryList.remove(at: indexPath.row)
+        self.collectionView.deleteItems(at: [indexPath])
     }
 }

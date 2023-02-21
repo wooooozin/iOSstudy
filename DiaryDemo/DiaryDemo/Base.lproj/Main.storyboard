@@ -81,7 +81,7 @@
         <!--Detail View Controller-->
         <scene sceneID="x4R-Ks-oTQ">
             <objects>
-                <viewController id="Ee2-V5-BW1" customClass="DetailViewController" customModule="DiaryDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="Ee2-V5-BW1" customClass="DetailViewController" customModule="DiaryDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Sz-tV-6KR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,12 +143,18 @@
                                         <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                        <connections>
+                                            <action selector="tapEditButton:" destination="Ee2-V5-BW1" eventType="touchUpInside" id="Zkg-wx-HAb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckt-MO-5tb">
                                         <rect key="frame" x="103.66666666666667" y="0.0" width="53.666666666666671" height="34.333333333333336"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="삭제"/>
+                                        <connections>
+                                            <action selector="tapDeleteButton:" destination="Ee2-V5-BW1" eventType="touchUpInside" id="kel-Ik-QbF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -172,6 +178,11 @@
                             <constraint firstItem="bb0-dK-hCg" firstAttribute="trailing" secondItem="mpu-eo-SGh" secondAttribute="trailing" constant="24" id="v1f-V6-Dhf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentsTextView" destination="sxX-8N-4ij" id="XRe-4Z-YHn"/>
+                        <outlet property="dateLabel" destination="cvO-1b-LcG" id="7va-t1-BeA"/>
+                        <outlet property="titleLabel" destination="emw-Q4-sY9" id="6nt-1C-Q3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEo-gK-hxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,7 +272,7 @@
         <!--일기작성-->
         <scene sceneID="2sU-dL-UNL">
             <objects>
-                <viewController id="NAn-HU-SGV" customClass="WriteViewController" customModule="DiaryDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteViewController" id="NAn-HU-SGV" customClass="WriteViewController" customModule="DiaryDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="34m-tV-C0H">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
