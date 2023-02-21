@@ -18,6 +18,7 @@
 		36025B4429A2C5B800F40A21 /* StarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36025B4329A2C5B800F40A21 /* StarCell.swift */; };
 		36025B4629A2C82E00F40A21 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36025B4529A2C82E00F40A21 /* WriteViewController.swift */; };
 		36025B4829A2C8BB00F40A21 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36025B4729A2C8BB00F40A21 /* DetailViewController.swift */; };
+		3606696429A4F8A000F3EA00 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606696329A4F8A000F3EA00 /* Diary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		36025B4329A2C5B800F40A21 /* StarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCell.swift; sourceTree = "<group>"; };
 		36025B4529A2C82E00F40A21 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		36025B4729A2C8BB00F40A21 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3606696329A4F8A000F3EA00 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				36025B2B29A2C19D00F40A21 /* AppDelegate.swift */,
 				36025B2D29A2C19D00F40A21 /* SceneDelegate.swift */,
 				36025B3129A2C19E00F40A21 /* Main.storyboard */,
+				3606696329A4F8A000F3EA00 /* Diary.swift */,
 				36025B4729A2C8BB00F40A21 /* DetailViewController.swift */,
 				36025B2F29A2C19D00F40A21 /* ViewController.swift */,
 				36025B4529A2C82E00F40A21 /* WriteViewController.swift */,
@@ -158,6 +161,7 @@
 				36025B3029A2C19D00F40A21 /* ViewController.swift in Sources */,
 				36025B2C29A2C19D00F40A21 /* AppDelegate.swift in Sources */,
 				36025B2E29A2C19D00F40A21 /* SceneDelegate.swift in Sources */,
+				3606696429A4F8A000F3EA00 /* Diary.swift in Sources */,
 				36025B4229A2C4A600F40A21 /* StarViewController.swift in Sources */,
 				36025B4629A2C82E00F40A21 /* WriteViewController.swift in Sources */,
 				36025B4829A2C8BB00F40A21 /* DetailViewController.swift in Sources */,

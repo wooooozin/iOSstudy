@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol WriteViewDelegate: AnyObject {
+    func didSelectRegister(diary: Diary)
+}
+
 class WriteViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
@@ -16,6 +20,7 @@ class WriteViewController: UIViewController {
     
     private let datePicker = UIDatePicker()
     private var diaryDate: Date?
+    weak var delegate: WriteViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +37,13 @@ class WriteViewController: UIViewController {
     // MARK: - IBAction Method
 
     @IBAction func tapConfirmButton(_ sender: UIBarButtonItem) {
+        guard let title = self.titleTextField.text else { return }
+        guard let contents = self.contentTextView.text else { return }
+        guard let date = self.diaryDate else { return }
         
+        let diary = Diary(title: title, contents: contents, date: date, isStar: false)
+        self.delegate?.didSelectRegister(diary: diary)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
