@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361E584829A80DD4004ECD87 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361E584729A80DD4004ECD87 /* WidgetKit.framework */; };
+		361E584A29A80DD4004ECD87 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361E584929A80DD4004ECD87 /* SwiftUI.framework */; };
+		361E584D29A80DD4004ECD87 /* DynamicIslandWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E584C29A80DD4004ECD87 /* DynamicIslandWidgetBundle.swift */; };
+		361E584F29A80DD4004ECD87 /* DynamicIslandWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E584E29A80DD4004ECD87 /* DynamicIslandWidgetLiveActivity.swift */; };
+		361E585129A80DD4004ECD87 /* DynamicIslandWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E585029A80DD4004ECD87 /* DynamicIslandWidget.swift */; };
+		361E585429A80DD6004ECD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361E585329A80DD6004ECD87 /* Assets.xcassets */; };
+		361E585629A80DD6004ECD87 /* DynamicIslandWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 361E585229A80DD4004ECD87 /* DynamicIslandWidget.intentdefinition */; };
+		361E585729A80DD6004ECD87 /* DynamicIslandWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 361E585229A80DD4004ECD87 /* DynamicIslandWidget.intentdefinition */; };
+		361E585A29A80DD6004ECD87 /* DynamicIslandWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 361E584529A80DD4004ECD87 /* DynamicIslandWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		363119C329A6C10300BCE97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363119C229A6C10300BCE97C /* AppDelegate.swift */; };
 		363119C529A6C10300BCE97C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363119C429A6C10300BCE97C /* SceneDelegate.swift */; };
 		363119C729A6C10300BCE97C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363119C629A6C10300BCE97C /* ViewController.swift */; };
@@ -15,7 +24,40 @@
 		363119CF29A6C10500BCE97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363119CD29A6C10500BCE97C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		361E585829A80DD6004ECD87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363119B729A6C10300BCE97C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 361E584429A80DD4004ECD87;
+			remoteInfo = DynamicIslandWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		361E585E29A80DD6004ECD87 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				361E585A29A80DD6004ECD87 /* DynamicIslandWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		361E584529A80DD4004ECD87 /* DynamicIslandWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DynamicIslandWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		361E584729A80DD4004ECD87 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		361E584929A80DD4004ECD87 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		361E584C29A80DD4004ECD87 /* DynamicIslandWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandWidgetBundle.swift; sourceTree = "<group>"; };
+		361E584E29A80DD4004ECD87 /* DynamicIslandWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		361E585029A80DD4004ECD87 /* DynamicIslandWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandWidget.swift; sourceTree = "<group>"; };
+		361E585229A80DD4004ECD87 /* DynamicIslandWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DynamicIslandWidget.intentdefinition; sourceTree = "<group>"; };
+		361E585329A80DD6004ECD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		361E585529A80DD6004ECD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363119BF29A6C10300BCE97C /* TimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363119C229A6C10300BCE97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363119C429A6C10300BCE97C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +69,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		361E584229A80DD4004ECD87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				361E584A29A80DD4004ECD87 /* SwiftUI.framework in Frameworks */,
+				361E584829A80DD4004ECD87 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		363119BC29A6C10300BCE97C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +88,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361E584629A80DD4004ECD87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				361E584729A80DD4004ECD87 /* WidgetKit.framework */,
+				361E584929A80DD4004ECD87 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		361E584B29A80DD4004ECD87 /* DynamicIslandWidget */ = {
+			isa = PBXGroup;
+			children = (
+				361E584C29A80DD4004ECD87 /* DynamicIslandWidgetBundle.swift */,
+				361E584E29A80DD4004ECD87 /* DynamicIslandWidgetLiveActivity.swift */,
+				361E585029A80DD4004ECD87 /* DynamicIslandWidget.swift */,
+				361E585229A80DD4004ECD87 /* DynamicIslandWidget.intentdefinition */,
+				361E585329A80DD6004ECD87 /* Assets.xcassets */,
+				361E585529A80DD6004ECD87 /* Info.plist */,
+			);
+			path = DynamicIslandWidget;
+			sourceTree = "<group>";
+		};
 		363119B629A6C10300BCE97C = {
 			isa = PBXGroup;
 			children = (
 				363119C129A6C10300BCE97C /* TimerDemo */,
+				361E584B29A80DD4004ECD87 /* DynamicIslandWidget */,
+				361E584629A80DD4004ECD87 /* Frameworks */,
 				363119C029A6C10300BCE97C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				363119BF29A6C10300BCE97C /* TimerDemo.app */,
+				361E584529A80DD4004ECD87 /* DynamicIslandWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +146,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		361E584429A80DD4004ECD87 /* DynamicIslandWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 361E585B29A80DD6004ECD87 /* Build configuration list for PBXNativeTarget "DynamicIslandWidgetExtension" */;
+			buildPhases = (
+				361E584129A80DD4004ECD87 /* Sources */,
+				361E584229A80DD4004ECD87 /* Frameworks */,
+				361E584329A80DD4004ECD87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicIslandWidgetExtension;
+			productName = DynamicIslandWidgetExtension;
+			productReference = 361E584529A80DD4004ECD87 /* DynamicIslandWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		363119BE29A6C10300BCE97C /* TimerDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 363119D329A6C10500BCE97C /* Build configuration list for PBXNativeTarget "TimerDemo" */;
@@ -77,10 +170,12 @@
 				363119BB29A6C10300BCE97C /* Sources */,
 				363119BC29A6C10300BCE97C /* Frameworks */,
 				363119BD29A6C10300BCE97C /* Resources */,
+				361E585E29A80DD6004ECD87 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				361E585929A80DD6004ECD87 /* PBXTargetDependency */,
 			);
 			name = TimerDemo;
 			productName = TimerDemo;
@@ -97,6 +192,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					361E584429A80DD4004ECD87 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					363119BE29A6C10300BCE97C = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -116,11 +214,20 @@
 			projectRoot = "";
 			targets = (
 				363119BE29A6C10300BCE97C /* TimerDemo */,
+				361E584429A80DD4004ECD87 /* DynamicIslandWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		361E584329A80DD4004ECD87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				361E585429A80DD6004ECD87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		363119BD29A6C10300BCE97C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,17 +241,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		361E584129A80DD4004ECD87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				361E585129A80DD4004ECD87 /* DynamicIslandWidget.swift in Sources */,
+				361E585629A80DD6004ECD87 /* DynamicIslandWidget.intentdefinition in Sources */,
+				361E584D29A80DD4004ECD87 /* DynamicIslandWidgetBundle.swift in Sources */,
+				361E584F29A80DD4004ECD87 /* DynamicIslandWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		363119BB29A6C10300BCE97C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				363119C729A6C10300BCE97C /* ViewController.swift in Sources */,
+				361E585729A80DD6004ECD87 /* DynamicIslandWidget.intentdefinition in Sources */,
 				363119C329A6C10300BCE97C /* AppDelegate.swift in Sources */,
 				363119C529A6C10300BCE97C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		361E585929A80DD6004ECD87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 361E584429A80DD4004ECD87 /* DynamicIslandWidgetExtension */;
+			targetProxy = 361E585829A80DD6004ECD87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		363119C829A6C10300BCE97C /* Main.storyboard */ = {
@@ -166,6 +293,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		361E585C29A80DD6004ECD87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicIslandWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DynamicIslandWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyou.TimerDemo.DynamicIslandWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		361E585D29A80DD6004ECD87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynamicIslandWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DynamicIslandWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyou.TimerDemo.DynamicIslandWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		363119D129A6C10500BCE97C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,12 +462,14 @@
 		363119D429A6C10500BCE97C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimerDemo/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,12 +491,14 @@
 		363119D529A6C10500BCE97C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimerDemo/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,6 +520,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		361E585B29A80DD6004ECD87 /* Build configuration list for PBXNativeTarget "DynamicIslandWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				361E585C29A80DD6004ECD87 /* Debug */,
+				361E585D29A80DD6004ECD87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		363119BA29A6C10300BCE97C /* Build configuration list for PBXProject "TimerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
