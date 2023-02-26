@@ -15,6 +15,7 @@
 		36353D7529AC083400ED482E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36353D7329AC083400ED482E /* LaunchScreen.storyboard */; };
 		36353D7E29AC092300ED482E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36353D7D29AC092300ED482E /* Alamofire */; };
 		36353D8129AC098500ED482E /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 36353D8029AC098500ED482E /* Charts */; };
+		36353D8329AC0B4D00ED482E /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36353D8229AC0B4D00ED482E /* DetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		36353D7129AC083400ED482E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36353D7429AC083400ED482E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36353D7629AC083400ED482E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36353D8229AC0B4D00ED482E /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				36353D6A29AC083000ED482E /* SceneDelegate.swift */,
 				36353D6C29AC083000ED482E /* ViewController.swift */,
 				36353D6E29AC083000ED482E /* Main.storyboard */,
+				36353D8229AC0B4D00ED482E /* DetailTableViewController.swift */,
 				36353D7129AC083400ED482E /* Assets.xcassets */,
 				36353D7329AC083400ED482E /* LaunchScreen.storyboard */,
 				36353D7629AC083400ED482E /* Info.plist */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36353D8329AC0B4D00ED482E /* DetailTableViewController.swift in Sources */,
 				36353D6D29AC083000ED482E /* ViewController.swift in Sources */,
 				36353D6929AC083000ED482E /* AppDelegate.swift in Sources */,
 				36353D6B29AC083000ED482E /* SceneDelegate.swift in Sources */,
