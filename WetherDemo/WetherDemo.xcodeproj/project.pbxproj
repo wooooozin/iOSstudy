@@ -14,6 +14,7 @@
 		361E587529A81B32004ECD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361E587429A81B32004ECD87 /* Assets.xcassets */; };
 		361E587829A81B32004ECD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361E587629A81B32004ECD87 /* LaunchScreen.storyboard */; };
 		36CA8DC529AADA0E003C0845 /* WeatherInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA8DC429AADA0E003C0845 /* WeatherInformation.swift */; };
+		36CA8DC729AAE142003C0845 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA8DC629AAE141003C0845 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		361E587729A81B32004ECD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		361E587929A81B32004ECD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36CA8DC429AADA0E003C0845 /* WeatherInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInformation.swift; sourceTree = "<group>"; };
+		36CA8DC629AAE141003C0845 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				361E586B29A81B30004ECD87 /* AppDelegate.swift */,
 				361E586D29A81B30004ECD87 /* SceneDelegate.swift */,
 				361E586F29A81B30004ECD87 /* ViewController.swift */,
+				36CA8DC629AAE141003C0845 /* ErrorMessage.swift */,
 				36CA8DC429AADA0E003C0845 /* WeatherInformation.swift */,
 				361E587129A81B30004ECD87 /* Main.storyboard */,
 				361E587429A81B32004ECD87 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				361E587029A81B30004ECD87 /* ViewController.swift in Sources */,
 				36CA8DC529AADA0E003C0845 /* WeatherInformation.swift in Sources */,
+				36CA8DC729AAE142003C0845 /* ErrorMessage.swift in Sources */,
 				361E586C29A81B30004ECD87 /* AppDelegate.swift in Sources */,
 				361E586E29A81B30004ECD87 /* SceneDelegate.swift in Sources */,
 			);

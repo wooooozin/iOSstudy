@@ -96,6 +96,7 @@
                     <connections>
                         <outlet property="cityNameLabel" destination="BYP-SX-e47" id="tFN-dH-1Rl"/>
                         <outlet property="cityNameTextField" destination="iLL-gH-6r6" id="auW-mC-ZRV"/>
+                        <outlet property="informationStackView" destination="Qlx-X1-cuE" id="RVw-1t-HWG"/>
                         <outlet property="maxTempLabel" destination="hAn-FX-siB" id="rZU-Hb-swt"/>
                         <outlet property="minTempLabel" destination="Qc9-Dm-Syk" id="Fg8-UF-Guy"/>
                         <outlet property="tempLabel" destination="F5a-Pz-Sbu" id="jXk-CR-poa"/>
