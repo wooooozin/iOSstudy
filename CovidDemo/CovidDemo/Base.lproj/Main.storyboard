@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -47,7 +46,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgy-nF-w0u">
-                                                <rect key="frame" x="75.666666666666657" y="40.333333333333343" width="20.666666666666671" height="20.333333333333329"/>
+                                                <rect key="frame" x="75.666666666666657" y="40.333333333333343" width="20.666666666666657" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -57,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMl-pQ-3f4" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="24" y="211.66666666666674" width="345" height="582.33333333333326"/>
+                                <rect key="frame" x="24" y="211.66666666666669" width="345" height="582.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -75,11 +74,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="mEq-nE-Rj8"/>
                     <connections>
-                        <outlet property="newCaseLabel" destination="8bC-Xf-vdC" id="ntP-p8-prN"/>
+                        <outlet property="newCaseLabel" destination="pgy-nF-w0u" id="ZfH-Ny-qPz"/>
                         <outlet property="pieChartView" destination="sMl-pQ-3f4" id="4Bt-9n-n3a"/>
                         <outlet property="totalCaseLabel" destination="K6m-PG-IyZ" id="3M1-Uh-uND"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
         </scene>

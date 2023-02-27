@@ -14,8 +14,10 @@
 		36353D7229AC083400ED482E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36353D7129AC083400ED482E /* Assets.xcassets */; };
 		36353D7529AC083400ED482E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36353D7329AC083400ED482E /* LaunchScreen.storyboard */; };
 		36353D7E29AC092300ED482E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36353D7D29AC092300ED482E /* Alamofire */; };
-		36353D8129AC098500ED482E /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 36353D8029AC098500ED482E /* Charts */; };
 		36353D8329AC0B4D00ED482E /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36353D8229AC0B4D00ED482E /* DetailTableViewController.swift */; };
+		36D987FA29AD5091004FEC0C /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D987F929AD5090004FEC0C /* CityCovidOverview.swift */; };
+		36D9880229AD6032004FEC0C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 36D9880129AD6032004FEC0C /* Charts */; };
+		36D9880429AD6032004FEC0C /* ChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 36D9880329AD6032004FEC0C /* ChartsDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		36353D7429AC083400ED482E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36353D7629AC083400ED482E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36353D8229AC0B4D00ED482E /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		36D987F929AD5090004FEC0C /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D9880429AD6032004FEC0C /* ChartsDynamic in Frameworks */,
 				36353D7E29AC092300ED482E /* Alamofire in Frameworks */,
-				36353D8129AC098500ED482E /* Charts in Frameworks */,
+				36D9880229AD6032004FEC0C /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +69,7 @@
 				36353D6829AC083000ED482E /* AppDelegate.swift */,
 				36353D6A29AC083000ED482E /* SceneDelegate.swift */,
 				36353D6C29AC083000ED482E /* ViewController.swift */,
+				36D987F929AD5090004FEC0C /* CityCovidOverview.swift */,
 				36353D6E29AC083000ED482E /* Main.storyboard */,
 				36353D8229AC0B4D00ED482E /* DetailTableViewController.swift */,
 				36353D7129AC083400ED482E /* Assets.xcassets */,
@@ -92,7 +97,8 @@
 			name = CovidDemo;
 			packageProductDependencies = (
 				36353D7D29AC092300ED482E /* Alamofire */,
-				36353D8029AC098500ED482E /* Charts */,
+				36D9880129AD6032004FEC0C /* Charts */,
+				36D9880329AD6032004FEC0C /* ChartsDynamic */,
 			);
 			productName = CovidDemo;
 			productReference = 36353D6529AC083000ED482E /* CovidDemo.app */;
@@ -124,7 +130,7 @@
 			mainGroup = 36353D5C29AC083000ED482E;
 			packageReferences = (
 				36353D7C29AC092300ED482E /* XCRemoteSwiftPackageReference "Alamofire" */,
-				36353D7F29AC098500ED482E /* XCRemoteSwiftPackageReference "Charts" */,
+				36D9880029AD6032004FEC0C /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 36353D6629AC083000ED482E /* Products */;
 			projectDirPath = "";
@@ -155,6 +161,7 @@
 			files = (
 				36353D8329AC0B4D00ED482E /* DetailTableViewController.swift in Sources */,
 				36353D6D29AC083000ED482E /* ViewController.swift in Sources */,
+				36D987FA29AD5091004FEC0C /* CityCovidOverview.swift in Sources */,
 				36353D6929AC083000ED482E /* AppDelegate.swift in Sources */,
 				36353D6B29AC083000ED482E /* SceneDelegate.swift in Sources */,
 			);
@@ -382,12 +389,12 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		36353D7F29AC098500ED482E /* XCRemoteSwiftPackageReference "Charts" */ = {
+		36D9880029AD6032004FEC0C /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 4.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -398,10 +405,15 @@
 			package = 36353D7C29AC092300ED482E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		36353D8029AC098500ED482E /* Charts */ = {
+		36D9880129AD6032004FEC0C /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 36353D7F29AC098500ED482E /* XCRemoteSwiftPackageReference "Charts" */;
+			package = 36D9880029AD6032004FEC0C /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		36D9880329AD6032004FEC0C /* ChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36D9880029AD6032004FEC0C /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = ChartsDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
